@@ -1,7 +1,7 @@
 
 solo dev, wandered into the matrix, never found my way back out... 
 
-<img width="480" height="268" alt="ngoding-mulu" src="https://github.com/user-attachments/assets/5fdc4e4b-e3b3-4fbc-b545-5ba470ce6143" />  <img width="470" height="470" alt="computer-work copy" src="https://github.com/user-attachments/assets/44bbb349-6c15-4ca4-9da0-8195352396a5" />
+<img width="480" height="268" alt="ngoding-mulu" src="https://github.com/user-attachments/assets/5fdc4e4b-e3b3-4fbc-b545-5ba470ce6143" />  
 
 
 
