@@ -1,14 +1,8 @@
-hi! im a solo guy who took an endeavour into the matrix
+solo dev, wandered into the matrix, never found my way back out... 
 
-i build ai/software stuff
-break it
-rebuild it
-pretend it was intentional 
-
+it's just me, a terminal, and a codebase full of things I'd rather not explain to the police break it, rebuild it, convince myself it was on purpose the whole time that's the entire SDLC status is always "shipping." regrets are always 0, mostly because I stopped counting around commit #47 and never looked back if it works, I built that. if it doesn't, it's a feature I haven't documented yet or evidence, depending who's asking
                                                        
 
-
-```typescript
 const me = {
   status: "shipping",
   sleep: null,
