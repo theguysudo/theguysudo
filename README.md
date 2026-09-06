@@ -104,6 +104,6 @@ TypeScript on the front, Python where nobody checks, Docker because "works on my
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=2000&width=500&background=0D1117&center=true&vCenter=true&lines=no+crimes+were+committed+in+the+making+of+this+profile)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=2000&width=600&background=0D1117&center=true&vCenter=true&lines=no+crimes+were+committed+in+the+making+of+this+profile)](https://git.io/typing-svg)
 
 </div>
