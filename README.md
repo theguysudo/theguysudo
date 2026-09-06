@@ -12,9 +12,16 @@ regrets are always 0, mostly because I stopped counting around commit #47 and ne
 I built that if it doesn't, it's a feature I haven't documented yet or evidence, depending who's asking
                                                        
 
+---
 
+## what I am actually shipping
 
+### [ENZO](https://github.com/theguysudo/ENZO) — self-hosted BYOK AI workspace
+chat, agents, and skills (Gmail, Google Calendar, web search, project generation) running entirely on **your own provider API keys** — no subscription, no middleman.
 
+- keys sealed client-side with AES-256-GCM — the server never sees them
+- one-command Docker deployment: `ghcr.io/theguysudo/enzo`
+- agents with scheduled runs + a custom agent builder that drafts an agent from a plain-language task description
+- Apache-2.0
 
-
-
+**live demo:** https://enzo-hub.duckdns.org
