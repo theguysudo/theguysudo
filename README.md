@@ -79,8 +79,6 @@ bug fixes that got merged by the people who own the code — every one of them r
 | [bramstroker/homeassistant-powercalc](https://github.com/bramstroker/homeassistant-powercalc/pull/5218) | the SONOFF ZBMINIR2 profile carried apparent power (VA) instead of real watts | replace it with measured values, as the maintainer requested |
 | [3dg1luk43/ha_washdata](https://github.com/3dg1luk43/ha_washdata/pull/538) | the "Interrupted Min" label had no translation entry, so every language fell back to English | add it for all 34 languages |
 
-6 more still in review (huggingface/lerobot, huggingface_hub, payloadcms, graphistry, nightly-labs) — check the [open PRs](https://github.com/pulls?q=is%3Apr+author%3Atheguysudo+is%3Aopen) tab for the ones that haven't been closed yet.
-
 <sub>these were written with AI assistance and human judgement — the diffs got reviewed by the people who maintain those repos, which is the part that counts.</sub>
 
 ---
