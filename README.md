@@ -1,6 +1,7 @@
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=theguysudo&color=red&style=for-the-badge&label=WITNESSES" alt="witnesses" />
   <img src="https://img.shields.io/badge/regrets-0-success?style=for-the-badge" alt="regrets" />
+  <img src="https://img.shields.io/badge/merged%20PRs-17-ff9900?style=for-the-badge" alt="merged prs" />
   <img src="https://img.shields.io/badge/SDLC-break%20it%20%E2%86%92%20rebuild%20it%20%E2%86%92%20deny%20it-blue?style=for-the-badge" alt="sdlc" />
   <img src="https://img.shields.io/badge/legal_consultant-a%20lawyer%20I%20keep%20on%20retainer-red?style=for-the-badge" alt="lawyer" />
 </div>
@@ -52,6 +53,38 @@ chat, agents, and skills (Gmail, Google Calendar, web search, project generation
 
 ---
 
+## upstream contributions (merged, so presumably useful to someone)
+
+bug fixes that got merged by the people who own the code — every one of them reviewed, CI'd and approved by maintainers who had no reason to be nice to me
+
+<div align="center">
+
+[![huggingface/lerobot](https://img.shields.io/badge/huggingface%2Flerobot-ff9900?style=for-the-badge)](https://github.com/huggingface/lerobot/pull/5465)
+[![amd/gaia](https://img.shields.io/badge/amd%2Fgaia-ff9900?style=for-the-badge)](https://github.com/amd/gaia/pull/8843)
+[![neomjs/neo](https://img.shields.io/badge/neomjs%2Fneo-ff9900?style=for-the-badge)](https://github.com/neomjs/neo/pull/21991)
+[![Ylianst/MeshCentral](https://img.shields.io/badge/Ylianst%2FMeshCentral-ff9900?style=for-the-badge)](https://github.com/Ylianst/MeshCentral/pull/8387)
+[![jxxghp/MoviePilot](https://img.shields.io/badge/jxxghp%2FMoviePilot-ff9900?style=for-the-badge)](https://github.com/jxxghp/MoviePilot/pull/7547)
+[![bramstroker/homeassistant-powercalc](https://img.shields.io/badge/bramstroker%2Fhomeassistant--powercalc-ff9900?style=for-the-badge)](https://github.com/bramstroker/homeassistant-powercalc/pull/5218)
+[![3dg1luk43/ha_washdata](https://img.shields.io/badge/3dg1luk43%2Fha__washdata-ff9900?style=for-the-badge)](https://github.com/3dg1luk43/ha_washdata/pull/538)
+
+</div>
+
+| upstream | what was broken | what I did |
+| --- | --- | --- |
+| [huggingface/lerobot](https://github.com/huggingface/lerobot/pull/5465) | `EvalConfig` happily accepted `n_episodes=0` and negative batch sizes, then died later with a misleading error | validate both at config construction, where the error can finally name the field that is wrong |
+| [amd/gaia](https://github.com/amd/gaia/pull/8843) | the approval card's expanded argument view hid invisible unicode (joiners, direction marks) that the main view was careful about | route those values through the same escaping rule the main field uses |
+| [neomjs/neo](https://github.com/neomjs/neo/pull/21991) | a dialog opened without an animation target stayed parked off-screen — a method renamed in an earlier refactor, so the override had quietly become dead code | rename the override back onto the live lifecycle hook, plus a unit spec |
+| [Ylianst/MeshCentral](https://github.com/Ylianst/MeshCentral/pull/8387) | Duo 2FA never set the "remember this device" cookie, because the Duo path skipped the step the TOTP path had | set it on the Duo path the same way the TOTP path does |
+| [jxxghp/MoviePilot](https://github.com/jxxghp/MoviePilot/pull/7547) | music search results kept their `// CD // 禁转` spec tails glued to the title, breaking album matching | strip the spec tail with a whitelist that knows the transfer declarations |
+| [bramstroker/homeassistant-powercalc](https://github.com/bramstroker/homeassistant-powercalc/pull/5218) | the SONOFF ZBMINIR2 profile carried apparent power (VA) instead of real watts | replace it with measured values, as the maintainer requested |
+| [3dg1luk43/ha_washdata](https://github.com/3dg1luk43/ha_washdata/pull/538) | the "Interrupted Min" label had no translation entry, so every language fell back to English | add it for all 34 languages |
+
+6 more still in review (huggingface/lerobot, huggingface_hub, payloadcms, graphistry, nightly-labs) — check the [open PRs](https://github.com/pulls?q=is%3Apr+author%3Atheguysudo+is%3Aopen) tab for the ones that haven't been closed yet.
+
+<sub>these were written with AI assistance and human judgement — the diffs got reviewed by the people who maintain those repos, which is the part that counts.</sub>
+
+---
+
 ## tools of the trade (alleged)
 
 <div align="center">
@@ -65,6 +98,8 @@ TypeScript on the front, Python where nobody checks, Docker because "works on my
 ---
 
 ## the numbers (exhibits A–D)
+
+<sub>17 merged pull requests across 14 upstream repos · 40 PRs opened · 36 people watching this nonsense</sub>
 
 <div align="center">
   <img height="160" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=theguysudo&theme=tokyonight" alt="profile stats" />
